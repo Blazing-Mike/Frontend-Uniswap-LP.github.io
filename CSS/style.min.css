@@ -1,0 +1,120 @@
+/* varibles */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+  transition: 1000ms ease-in-out; }
+
+/* genral */
+.flex, .flex-perfect {
+  display: flex;
+  align-items: center; }
+
+.flex-perfect {
+  justify-content: center; }
+
+.gap-x {
+  gap: 1rem; }
+
+body {
+  font-size: 16px;
+  padding: 10px;
+  background: #b38cfc; }
+
+label {
+  display: block;
+  font-size: 1rem;
+  padding: 5px 0; }
+
+/*typo */
+.heading {
+  text-align: center;
+  margin: 1rem 0; }
+  .heading .big-heading {
+    font-size: 1.3rem; }
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* form */
+.field-container {
+  margin: 5px 0; }
+
+input,
+select {
+  outline: none; }
+
+input::placeholder {
+  padding: 10px; }
+
+.primary-input {
+  width: 18rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  border: 1px solid grey; }
+  .primary-input::placeholder {
+    padding: 0 20px;
+    font-size: 1rem; }
+
+.secondary-input {
+  width: 7rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  border: 1px solid grey; }
+
+.pairs {
+  width: 18rem; }
+
+.buttons {
+  display: flex;
+  gap: 1rem; }
+
+.add-pair {
+  width: 6rem;
+  height: 2.2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  padding: 0 5px; }
+  .add-pair:hover {
+    color: #b38cfc;
+    border: 1px solid #ffffff; }
+
+.submit {
+  width: 15rem;
+  height: 2.4rem;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: white;
+  margin-left: 5%; }
+  .submit:hover {
+    color: #b38cfc;
+    border: 1px solid #ffffff; }
+
+.element {
+  background: inherit;
+  margin: 5px 0; }
+
+@media (min-width: 700px) {
+  .primary-input {
+    width: 30rem;
+    height: 2.2rem;
+    border-radius: 5px;
+    border: 1px solid grey; }
+  .secondary-input {
+    width: 14rem; }
+  .add-pair {
+    width: 10rem; }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; }
+  .submit {
+    margin-left: 17%; } }

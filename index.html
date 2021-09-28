@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./CSS/style.min.css">
+    <title>Uniswap LP monitor</title>
+</head>
+<body>
+    <div class="container">
+          <div class="heading">
+            <h1 class="big-heading">Uniswap LP monitor</h1>
+            <p class="para">Monitor your uniswap Liquidity Position</p>
+        </div>
+<div class="wrapper">
+    <form action="#" id="form">  
+        <div class="field-container">
+            <label for="First name">First name</label>
+            <input type="text" class="primary-input" placeholder="First Name" id="Fname" name="Fname"> 
+           </div>
+    
+           <div class="field-container">
+            <label for="First name">Email</label>
+            <input type="email" class="primary-input" placeholder=" Email Address" id="email" name="email"> 
+           </div>
+    
+           
+                <div class="position" id="elem1">
+                    <div class="field-container">
+                        <label for="pairs">Pairs</label>
+                     <select name="pairs" class="primary-input pairs-select">
+                         <option  value="ETH/DAI">ETH/DAI</option>
+                         <option value="DAI/USD ">DAI/USD</option>
+                         <option value="ETH/USD ">ETH/USD </option>
+                         <option value="UNI/ETH ">UNI/ETH </option>
+                         <option value="USDC/ETH">USDC/ETH</option>
+                         <option value="USDT/ETH">USDT/ETH</option>
+                       </select>
+                    </div>
+                
+                <div class="flex gap-x">
+                 <div class="field-container">
+                     <label for="pairs">Lower Tick</label>
+                     <input class="secondary-input" placeholder="Lower Tick" id="lower-tick" name="lower-tick">   
+                 </div>
+                 <div class="field-container">
+                     <label for="pairs">Upper Tick</label>
+                     <input  class="secondary-input" placeholder="Upper Tick" id="upper-tick" name="upper-tick">   
+                 </div>
+                </div>
+             </div>
+          
+            <div class="buttons">
+                <button class="add-pair clone" id="add-pair">Add Position</button>
+                <button class="remove add-pair">remove</button>
+            </div>
+       
+    <input type="submit" value="Monitor position" class="submit"> 
+    </form>
+    
+</div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
